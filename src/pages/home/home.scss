@@ -1,0 +1,153 @@
+page-home {
+    ion-header{
+        div{
+            height:4rem;
+            background: url('../../assets/imgs/header.png') no-repeat no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+    $banimg:16rem;
+    // 标题红色
+    $textred:#ff2e2a;
+    ion-content{
+        ion-slides{
+            height:$banimg !important;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height:$banimg !important;
+        }
+        .swiper-pagination-bullet{
+            background: #fff;
+            opacity:1;
+        }
+        .swiper-pagination-bullet-active{
+            background: #ff8c02;
+        }
+        .guan{
+            display: flex;
+            height: 7.6rem;
+            margin: 1.6rem 0; 
+            li{
+                height: 7.6rem;
+                width: 33.3%;
+                flex-basis: 33.3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+        .title{
+            line-height: 4.3rem;
+            background: #ededed;
+            text-align: center;
+            color: $textred;
+            font-size:1.6rem;
+            span:nth-child(2),span:nth-child(3){
+                color: #ff5400;
+            }
+        }
+        .item:last-child{
+            display: none;
+            height: 0;
+        }
+        $inputradius:8px;
+        .list-md[inset] .item:first-child,.list-md[inset] .item:nth-child(2){
+            padding: 0 16px;
+            border: 1px solid #cdcdcd;
+            border-radius: $inputradius;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        .item-md.item-input.item-input-has-focus.item-inner,.item-md.item-input.input-has-focus .item-inner{
+            border: none;
+            box-shadow:inset 0px 0px 0px  #cdcdcd;
+        }
+        
+        ion-label[fixed]{
+            flex: 0 0 30px;
+            width: 30px;
+            min-width: 30px;
+            max-width: 50px;
+            text-align: center;
+        }
+        .btn{
+            margin: 0 16px;
+            button{
+                border-radius: $inputradius;
+                font-size: 1.8rem;
+                margin-top: -15px;
+                margin-bottom: 15px;
+            }
+            
+        }
+        .phone{
+            ion-icon{
+                font-weight: 600;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
+        }
+        .icon-list{
+            margin-top: 15px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 25%;
+                    flex-basis: 25%;
+                    text-align: center;
+                    position: relative;
+                    margin-bottom: 15px;
+                    img{
+                        display: block;
+                        width: 70%;
+                        margin:0 auto;
+                        margin-bottom: 7px;
+                    }
+                    span{
+                        color: #333;
+                        font-size: 1.6rem;
+                    }
+                    i{
+                        position: absolute;
+                        top:0;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+        // 头条
+        .top-title{
+            display: flex;
+            line-height: 4.3rem;
+            align-items: center;
+            justify-content: center;
+            >div:first-child{
+                span{
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background: #ff6000;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 22px;
+                }  
+            }
+            >div:nth-child(2){
+                color: #333;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
+        }
+    }//内容区域
+}

@@ -1,0 +1,10 @@
+page-tabs {
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+        color: red;
+    }
+    .tabs-md .tab-button[aria-selected=true] {
+        .tab-button-text{
+            color: red;
+        }
+    }
+}

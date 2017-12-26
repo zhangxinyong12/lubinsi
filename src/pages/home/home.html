@@ -1,0 +1,99 @@
+
+<ion-header>
+  <div>
+
+  </div>
+</ion-header>
+
+
+<ion-content >
+  <ion-slides pager autoplay="3000" loop="true">
+    <ion-slide *ngFor="let item of [1,2,3,4,5]">
+      <img src="../../assets/imgs/banner.png" alt="图片丢失">
+    </ion-slide>
+  </ion-slides>
+  <!-- 家具馆 -->
+  <ul class="guan">
+    <li>
+      <img src="../../assets/imgs/ban1.png" alt="">
+    </li>
+    <li>
+      <img src="../../assets/imgs/ban2.png" alt="">
+    </li>
+    <li>
+      <img src="../../assets/imgs/ban3.png" alt="">
+    </li>
+  </ul>
+  <!-- 标题 -->
+  <h3 class="title">
+    <span>预约房量</span>
+    <span>&</span>
+    <span>活动报名</span>
+  </h3>
+  <!-- 用户提交表单 -->
+  <div>
+    <ion-list inset>
+      <ion-item>
+        <ion-label no-lines fixed>
+          <ion-icon name="person"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="你的姓名"></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label fixed>
+          <ion-icon name="phone-portrait"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="你的电话"></ion-input>
+      </ion-item>
+      <ion-item no-lines ></ion-item>
+    </ion-list>
+    <div class="btn">
+      <button ion-button block color="danger" >提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+    </div>
+  </div>
+  <!-- 标题 -->
+  <h3 class="title phone">
+    <span>
+      <ion-icon name="call"></ion-icon>
+    </span>
+    <span>鲁宾斯咨询热线：</span>
+    <span>028-65062999 13880949679</span>
+  </h3>
+  <!-- 图标分类 -->
+  <div class="icon-list">
+    <ul>
+      <li *ngFor="let item of iconList">
+        <img src="../../assets/imgs/{{item.img}}" alt="图片">
+        <span>{{item.title}}</span>
+        <i *ngIf="item?.hot"><img src="../../assets/imgs/hot.png" alt="hot"></i>
+      </li>
+    </ul>
+  </div>
+  <!-- 头条 -->
+  <div class="top-title title">
+    <div>
+      <span>鲁</span> <span>宾</span> <span>斯</span> <span>头</span> <span>条</span>
+    </div>
+    <div>
+      <span>
+        12. 12火爆来袭, 全场狂欢
+      </span>
+    </div>
+  </div>
+  <!--产品 -->
+  <div class="prto-list hot">
+    <ul>
+      <li *ngFor="let item of proHotList">
+        <div>
+          <span>{{item.title}}</span>
+          <strong>{{item.prise}}</strong>
+        </div>
+        <img src="../../assets/imgs/{{item.img}}" alt="产品">
+      </li>
+    </ul>
+  </div>
+  <!--产品 -->
+  <div class="prto-list group">
+    
+  </div>
+</ion-content>

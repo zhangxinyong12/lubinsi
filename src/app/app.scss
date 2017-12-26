@@ -1,0 +1,46 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+// @media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+//   html { font-size: 70.3%; }
+// }
+// @media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+//   html { font-size: 73.24%; }
+// }
+// @media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+//   html { font-size: 75.0%; }
+// }
+// @media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+//   html { font-size: 78.125%; }
+// }
+// @media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait){
+//   html { font-size: 80.8.6%; }
+// }
+// @media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait){
+//   html { font-size: 84.375%; }
+// }
