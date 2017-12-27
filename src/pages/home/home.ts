@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component ,ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams , Content } from 'ionic-angular';
 
 /**
  * Generated class for the HomePage page.
@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  @ViewChild(Content) content:Content;
   public icon1=['每月特价','热销爆款','套餐团购','新品上市','鲁宾斯','体验馆','我秀我家','帮助中心'];
   public iconList=[
     {img:'iconList1.png',title:'每月特价'},
@@ -47,5 +48,7 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
-
+  scrollToTop(){  // 回到顶部
+    this.content.scrollToTop();
+  }
 }
