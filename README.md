@@ -19,16 +19,16 @@ cnpm install
 
 4. 启动 APP
 ```bash
-ionic run serve 
+ionic serve 
 ```
 其它命令：
 - 清空 www/build 文件夹
 ```bash
-ionic run clean
+ionic  clean
 ```
 - 生成生产环境代码
 ```bash
-ionic run build
+ionic build
 ```
 
 详情请查看 package.json 
