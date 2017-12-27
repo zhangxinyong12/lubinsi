@@ -16,6 +16,8 @@ npm install
 ```bash
 cnpm install
 ```
+创建app项目
+ ionic start  xxxappname tabs  (带有3个导航条的项目)
 
 4. 启动 APP
 ```bash
@@ -24,7 +26,7 @@ ionic serve
 其它命令：
 - 清空 www/build 文件夹
 ```bash
-ionic  clean
+npm run clean
 ```
 - 生成生产环境代码
 ```bash

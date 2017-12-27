@@ -9,6 +9,15 @@ page-home {
     $banimg:16rem;
     // 标题红色
     $textred:#ff2e2a;
+    // 字体查询
+    @mixin fontsize{
+        @media (max-width:375px) {
+            font-size: 16px;
+        }
+        @media (max-width:320px) {
+            font-size: 14px;
+        }
+    }
     ion-content{
         ion-slides{
             height:$banimg !important;
@@ -89,9 +98,7 @@ page-home {
             ion-icon{
                 font-weight: 600;
             }
-            @media (max-width:375px) {
-                font-size: 14px;
-            }
+            @include fontsize;
         }
         .icon-list{
             margin-top: 15px;
@@ -117,12 +124,12 @@ page-home {
                     i{
                         position: absolute;
                         top:0;
-                        right: -10px;
+                        right: -14px;
                     }
                 }
             }
         }
-        // 头条
+        // ioc 头条
         .top-title{
             display: flex;
             line-height: 4.3rem;
@@ -145,8 +152,181 @@ page-home {
                 font-weight: bold;
                 margin-left: 10px;
             }
-            @media (max-width:375px) {
-                font-size: 14px;
+            @include fontsize;
+        }
+        //产品
+        .prto-list{
+            position: relative;
+            margin-top:4rem;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 1px solid $textred;
+                li{
+                    width: 50%;
+                    flex-basis: 50%;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #cdcdcd;
+                    text-align: center;
+                    background: #f9f9f9;
+                    >div{
+                        height: 5.5rem;
+                        padding-top: 1.5rem;
+                        font-weight: bold;
+                        >span:last-child{
+                            color: $textred;
+                        }
+                    }
+                    >i{
+                        display: flex;
+                        justify-content: center;
+                        align-content:center;
+                        >img{
+                            width: 90%;
+                            height: 90%;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+                .bottom{
+                    width: 33.33%;
+                    flex-basis:33.33%;
+                    >div{
+                        overflow: hidden;
+                        font-size: 12px;
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                    >span:last-child{
+                        
+                        color: $textred;
+                       
+                    }
+                }
+                li:nth-child(odd){
+                    border-right: 1px solid #cdcdcd;
+                }
+                li:last-child{
+                    border-right: none;
+                    border-left: 1px solid #cdcdcc;
+                }
+            }
+            .title-text{
+                position: absolute;
+                top:-1.55rem;
+                left: 0;
+                height: 3.1rem;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: auto;
+                    position: absolute;
+                    top:0;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
+                span{
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: bold;
+                    position: absolute;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%)
+                }
+            }
+        }
+        //新闻资讯
+        .news{
+            margin-top: 1.4rem;
+            .news-title{
+                height: 4.2rem;
+                background: #ededed;
+                font-size: 1.8rem;
+                font-weight:400;
+                color: $textred;
+                padding: 0 1rem;
+                display: flex;
+                align-items: center;
+                ion-icon{
+                    margin-right: 1rem;
+                }
+                span:last-child{
+                    color: #000;
+                    font-size: 14px;
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+            ul{
+                li{
+                    display: flex;
+                    height: 8.5rem;
+                    border-bottom:1px solid #cdcdcd;
+                    margin: 0 1rem;
+                    padding: 1rem 0;
+                    div:first-child{
+                        width:12.3rem;
+                        flex-basis: 12.3rem;
+                        display: flex;
+                        padding-right: 1.8rem;
+                    }
+                    div:last-child{
+                        flex: 1;
+                        display: flex;
+                        flex-wrap: wrap;
+                        h4{
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            flex-basis: 100%;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                            color: #797979;
+                            flex-basis: 100%;
+                        }
+                    }
+                }
+                li:last-child{
+                    border: none;
+                }
+            }
+        }
+        // 底部  
+        footer{
+            background: #f4f4f4;
+            font-size: 1.2rem;
+            color: #797979;
+            div:first-child{
+                height: 4rem;
+                display: flex;
+                border-bottom: 1px solid #959595;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-around;
+                span{
+
+                }
+                i{
+                    height:1.2rem;
+                    width: 1px;
+                    display: block;
+                    background:#92929f;
+                }
+            }
+            div:last-child{
+                height: 6.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-bottom: 1px solid #959595;
+                
+                p{
+                    flex-basis: 100%;
+                    text-align: center;
+                }
             }
         }
     }//内容区域

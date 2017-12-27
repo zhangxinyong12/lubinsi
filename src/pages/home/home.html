@@ -83,17 +83,115 @@
   <!--产品 -->
   <div class="prto-list hot">
     <ul>
-      <li *ngFor="let item of proHotList">
+      <li *ngFor="let item of proHotList;let i=index" [ngClass]="{'bottom':i>=proHotList.length-3}">
         <div>
           <span>{{item.title}}</span>
-          <strong>{{item.prise}}</strong>
+          <br/>
+          <span *ngIf="i<proHotList.length-3">{{item.prise}}</span>
         </div>
-        <img src="../../assets/imgs/{{item.img}}" alt="产品">
+        <i>
+          <img src="../../assets/imgs/{{item.img}}" alt="产品">          
+        </i>
+        <span *ngIf="i>=proHotList.length-3">{{item.prise}}</span>
+      </li>
+    </ul>
+    <div class="title-text">
+      <img src="../../assets/imgs/title.png" alt="">
+      <span>热销爆款</span>
+    </div>
+  </div>
+  <!--产品 -->
+  <div class="prto-list hot">
+    <ul>
+      <li *ngFor="let item of proHotList2;let i=index" [ngClass]="{'bottom':i>=proHotList2.length-3}">
+        <div>
+          <span>{{item.title}}</span>
+          <br/>
+          <span *ngIf="i<proHotList2.length-3">{{item.prise}}</span>
+        </div>
+        <i>
+          <img src="../../assets/imgs/{{item.img}}" alt="产品">          
+        </i>
+        <span *ngIf="i>=proHotList2.length-3">{{item.prise}}</span>
+      </li>
+    </ul>
+    <div class="title-text">
+      <img src="../../assets/imgs/title.png" alt="">
+      <span>套餐团购</span>
+    </div>
+  </div>
+  <!-- 产品 -->
+  <div class="prto-list hot">
+    <ul>
+      <li *ngFor="let item of proHotList2;let i=index" [ngClass]="{'bottom':i>=proHotList2.length-3}">
+        <div>
+          <span>{{item.title}}</span>
+          <br/>
+          <span *ngIf="i<proHotList2.length-3">{{item.prise}}</span>
+        </div>
+        <i>
+          <img src="../../assets/imgs/{{item.img}}" alt="产品">          
+        </i>
+        <span *ngIf="i>=proHotList2.length-3">{{item.prise}}</span>
+      </li>
+    </ul>
+    <div class="title-text">
+      <img src="../../assets/imgs/title.png" alt="">
+      <span>每月特价</span>
+    </div>
+  </div>
+  <!-- 商城资讯 -->
+  <div class="news">
+    <div class="news-title">
+      <ion-icon name="list-box"></ion-icon>
+      <span> 商城资讯</span>
+      <span>更多</span>
+    </div>
+    <ul>
+      <li>
+        <div>
+          <img src="../../assets/imgs/newsList1.png" alt="">
+        </div>
+        <div>
+          <h4>11.24 亲,你有一个礼单,记得查收</h4>
+          <p>“我的生日,总想与你分享更多。今年我19岁了,感.......”</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="../../assets/imgs/newsList2.png" alt="">
+        </div>
+        <div>
+          <h4>12.9 【当店庆遇上双12】#城山隐#专</h4>
+          <p>今年我想送给家人一个礼物 一个我们一起精心</p>  
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="../../assets/imgs/newsList2.png" alt="">
+        </div>
+        <div>
+          <h4>12.9 【当店庆遇上双12】#城山隐#专</h4>
+          <p>今年我想送给家人一个礼物 一个我们一起精心</p>
+        </div>
       </li>
     </ul>
   </div>
-  <!--产品 -->
-  <div class="prto-list group">
-    
-  </div>
+  <!-- 底部公共 footer -->
+  <footer>
+    <div>
+      <span>登陆</span>
+      <i></i>
+      <span>反馈</span>
+      <i></i>
+      <span>关于我们</span>
+      <i></i>
+      <span>返回顶部</span>
+    </div>
+    <div>
+      <p>2005-2017 版权所有</p>
+      <p>鲁宾斯国际商城--源于欧美 传世臻品</p>
+      <p>备案号:88888888888888</p>
+    </div>
+  </footer>
 </ion-content>
