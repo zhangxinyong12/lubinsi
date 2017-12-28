@@ -48,8 +48,9 @@ ionic g page myPage
 ```bash
 ionic g provider MyData
 ```
---------------------------
-字体图标使用阿里图标库。
+关于字体图标说明
+--
+字体图标使用阿里图标库。搜索对应的图标添加到项目，下载到本地，解压后放到 assets/fonts文件夹下。对应的添加icons.scss到theme下，引入图标文件，对应的添加类名，最后别忘了引入到variables。scss
 
 文档参考
 -----------
