@@ -1,0 +1,48 @@
+// iconfont图标 class 定义
+$icon-font-path: '../assets/fonts';
+// TODO:每次对图标进行增加或修改,请修改 $icon-version 的值，以让浏览器能立即生效
+$icon-version: '0.0.2';
+.icon.svg {
+    // 让图标支持 svg 的使用方式
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "ionicons";
+    src: url('#{$icon-font-path}/iconfont.woff?v=#{$icon-version}') format('woff'),
+    /* chrome, firefox */
+    url('#{$icon-font-path}/iconfont.ttf?v=#{$icon-version}') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('#{$icon-font-path}/iconfont.svg?v=#{$icon-version}') format('svg');
+    /* iOS 4.1- */
+}
+
+.ionicons {
+    font-family: "ionicons" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+//平台采用  md 样式
+.ion-md-icon-kefu:before {
+    content: "\e8a5";
+}
+.ion-md-icon-fenlei:before {
+    content: "\e68e";
+}
+.ion-md-icon-shouji:before {
+    content: "\e617";
+}
+.ion-md-icon-wode:before {
+    content: "\e67a";
+}
+.ion-md-icon-gouwuche1:before {
+    content: "\e6af";
+}
+.ion-md-icon-shouye-copy:before {
+    content: "\e602";
+}

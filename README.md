@@ -48,6 +48,8 @@ ionic g page myPage
 ```bash
 ionic g provider MyData
 ```
+--------------------------
+字体图标使用阿里图标库。
 
 文档参考
 -----------
@@ -71,8 +73,8 @@ ionic g provider MyData
 
 关于ionic rem 布局的问题
 -------------------
-  1.  rem 读取的是html font-size的大小。ionic 认为浏览器的默认字体是16px，所以 62.5%*16px=10px=1rem
-  2.  如果想用rem 实现 自适应布局的话，显然不行。目前我是用flex 加媒体查询
+1.  rem 读取的是html font-size的大小。ionic 认为浏览器的默认字体是16px，所以 62.5%*16px=10px=1rem
+2.  如果想用rem 实现 自适应布局的话，显然不行。目前我是用flex 加媒体查询
 
 
 
