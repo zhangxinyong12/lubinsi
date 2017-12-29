@@ -1,6 +1,7 @@
 import { Component ,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams , Content } from 'ionic-angular';
 
+
 /**
  * Generated class for the HomePage page.
  *
@@ -48,9 +49,5 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
-  scrollToTop(){  // 回到顶部 https://ionicframework.com/docs/api/components/content/Content/
-    this.content.scrollToTop().then(()=>{console.log('滚动完成')}); // 可选参数 默认300ms 返回 promise
-    // scrollTo(x,y,time)  滚动的位置x y ，时间 默认300ms
-    //返回 promise 
-  }
+  
 }

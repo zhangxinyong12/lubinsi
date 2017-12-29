@@ -1,0 +1,35 @@
+com-footer {
+  // 底部  
+  footer {
+    background: #f4f4f4;
+    font-size: 1.2rem;
+    color: #797979;
+    div:first-child {
+      height: 4rem;
+      display: flex;
+      border-bottom: 1px solid #959595;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+      i {
+        height: 1.2rem;
+        width: 1px;
+        display: block;
+        background: #92929f;
+      }
+    }
+    div:last-child {
+      height: 6.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #959595;
+      p {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
